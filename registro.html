@@ -13,12 +13,20 @@
     <h3 class="form">Favor de Ingresar los datos necesarios: </h3>
 
     <form action="Datos">
+        <label for="foto_alumno">Favor de subir tu foto (formal)</label><br><br>
+        <input type="file" id="foto_alumno" name="foto_alumno"><br><br>
         <label for="Nombre">Nombre del Alumno</label> <br>
         <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
         <label for="Id_estudiante">Ingresa tu Id de estudiante</label><br>
         <input type="number" id="Id_estudiante" name="Id_estudiante" placeholder="Id_estudiante"><br>
-        <label for="Universidad">Ingresa la institucion de la que vienes</label> <br>
+        <label for="Edad">Edad</label><br>
+        <input type="number" id="Edad" name="Edad" placeholder="Edad"><br>
+        <label for="Universidad">Ingresa la institucion a la que pertences</label> <br>
         <input type="text" id="Universidad" name="Universidad" placeholder="Universidad"><br><br>
+        <label for="Promedio">Promedio</label><br>
+        <input type="number" id="Promedio" name="Promedio" placeholder="Promedio"><br>
+        <label for="Creditos">Creditos</label><br>
+        <input type="number" id="Creditos" name="Creditos" placeholder="Creditos"><br>
 
 
         <label for="Periodo">Ingresa cuando iniciaste tu carrera y cuando aproximadamente finalizaria</label><br>
@@ -44,10 +52,12 @@
 
      </select>
         <br><br>
-        <input type="reset" onclick="alert('Al poner aceptar, se borraran sus datos y tendra que ingresarlos de nuevo')">
         <input type="button" id="Send" name="Send" value="Enviar" onclick="alert('Tus datos se han ingresado a la plataforma :)');"><br>
+        <a href="C:\Users\Lizeth\Documents\2021630253 DAEL\3er semestre IA\Paradigmas de programacion\Proyecto\mod_prof.html" target="blank">
+            <input type="button" id="consultar" name="consultar" value="consultar"> <br></a>
 
     </form>
+
 </body>
 
 </html>
