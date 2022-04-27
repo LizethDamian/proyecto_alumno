@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <h1 class="title">Bienvenido Alumno!!</h1>
+    <h3 class="form">Favor de Ingresar los datos necesarios: </h3>
+
+    <form action="Datos">
+        <label for="Nombre">Nombre del Alumno</label> <br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+        <label for="Id_estudiante">Ingresa tu Id de estudiante</label><br>
+        <input type="number" id="Id_estudiante" name="Id_estudiante" placeholder="Id_estudiante"><br>
+        <label for="Universidad">Ingresa la institucion de la que vienes</label> <br>
+        <input type="text" id="Universidad" name="Universidad" placeholder="Universidad"><br><br>
+
+
+        <label for="Periodo">Ingresa cuando iniciaste tu carrera y cuando aproximadamente finalizaria</label><br>
+        <input type="date" id="Inicio" name="Inicio"><br>
+        <input type="datetime-local" id="final_estimado" name="final_estimado"><br><br>
+
+        <label for="Periodo_actual">Ingresa el periodo que cursas</label> <br>
+        <input type="text" id="Periodo_actual" name="Periodo_actual" placeholder="Periodo_actual"><br><br>
+
+        <label for="tipo_alumno">Selecciona que tipo de alumno eres: </label><br>
+        <label for="AlumnoR">Alumno Regular</label>
+        <input type="checkbox" id="AlumnoR" name="AlumnoR" value="Alumno_Regular"><br>
+        <label for="AlumnoI">Alumno Irregular</label>
+        <input type="checkbox" id="AlumnoI" name="AlumnoI" value="Alumno_Irregular"><br>
+
+
+        <p>Turno</p>
+        <select name="turno" id="turno">
+         <option value="Matutino">Matutino</option>
+         <option value="Vespertino">Vespertino</option>
+         <option value="Mixto">Mixto</option>
+
+
+     </select>
+        <br><br>
+        <input type="reset" onclick="alert('Al poner aceptar, se borraran sus datos y tendra que ingresarlos de nuevo')">
+        <input type="button" id="Send" name="Send" value="Enviar" onclick="alert('Tus datos se han ingresado a la plataforma :)');"><br>
+
+    </form>
+</body>
+
+</html>
